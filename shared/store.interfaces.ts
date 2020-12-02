@@ -7,7 +7,7 @@ export interface ListCars {
   url: string;
 }
 
-export const token = '5c7b08a1dec93a484aaf11810fe491b43b38b8ca';
+export const token = '69932e14f25f7a587af6c8ff520edb95afd9dffa';
 
 export const htmlGithubApi = 'https://api.github.com/repos/auxilien0/countenergy';
 
