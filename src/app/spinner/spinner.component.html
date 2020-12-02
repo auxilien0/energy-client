@@ -1,0 +1,27 @@
+<div
+  class="animated_container"
+  [ngClass]="{'is_visible': isActive, 'small_spinner_container': isSmall}"
+>
+  <div
+    class="sk-folding-cube"
+    [ngClass]="{'small_spinner': isSmall}"
+  >
+    <div class="sk-cube1 sk-cube"></div>
+    <div class="sk-cube2 sk-cube"></div>
+    <div class="sk-cube4 sk-cube"></div>
+    <div class="sk-cube3 sk-cube"></div>
+  </div>
+  <ng-content></ng-content>
+</div>
+<div *ngIf="!isSmall" class="no_spinner" [ngClass]="{'is_visible_no_spinner': isActive}"></div>
+<!-- 
+<div
+  *ngIf="!animated"
+  class="sk-folding-cube"
+  [ngClass]="{'small_spinner': isSmall}"
+>
+  <div class="sk-cube1 sk-cube"></div>
+  <div class="sk-cube2 sk-cube"></div>
+  <div class="sk-cube4 sk-cube"></div>
+  <div class="sk-cube3 sk-cube"></div>
+</div> -->

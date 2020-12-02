@@ -1,0 +1,8 @@
+<div
+  class="container"
+  (window:scroll)="onScroll($event)"
+>
+  <p class="data">{{data}}</p>
+  <p *ngIf="!listItems.length">{{resultIsEmpty}}</p>
+  <p *ngIf="errorNoMore" class="no_more_data">{{errorNoMore}}</p>
+</div>

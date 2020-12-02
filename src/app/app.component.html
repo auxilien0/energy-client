@@ -1,0 +1,10 @@
+<nav *ngIf="!loading">
+  <a
+    *ngFor="let customer of customers"
+    class="navA"
+    [routerLink]="'/zakaznik/' + customer.slug"
+  >
+    {{customer.name}}
+  </a>
+</nav>
+<router-outlet></router-outlet>
