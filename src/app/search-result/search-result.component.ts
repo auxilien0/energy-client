@@ -50,6 +50,7 @@ export class SearchResultComponent implements OnInit, OnDestroy {
   }
 
   showDocument(path: string) {
+    this.loadingContent = true;
     this.http.get(rawDataFile(path), {
       headers: {
         Accept: 'application/vnd.github.v3.raw',

@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-github": "ng build --prod --output-path docs --base-href https://auxilien0.github.io/energy-client.github.io/ --deploy-url https://auxilien0.github.io/energy-client.github.io/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
