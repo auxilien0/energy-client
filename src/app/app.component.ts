@@ -17,7 +17,7 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private http: HttpClient, private store: Store) {}
 
   getUrl(url: string) {
-    return this.http.get(`${htmlGithubApi}${url}`, githubAuthorizationHeader);
+    return this.http.get(`${htmlGithubApi}${url}`);
   }
 
   ngOnInit() {

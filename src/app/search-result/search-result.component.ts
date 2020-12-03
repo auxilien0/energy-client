@@ -52,7 +52,6 @@ export class SearchResultComponent implements OnInit, OnDestroy {
   showDocument(path: string) {
     this.http.get(rawDataFile(path), {
       headers: {
-        Authorization: `token ${token}`,
         Accept: 'application/vnd.github.v3.raw',
       },
       responseType: 'text',
